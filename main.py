@@ -36,3 +36,22 @@ class ArnoldApp(tk.Tk):
         frame = self.frames[cont]
         frame.tkraise()
         frame.set_menubar()
+
+
+class MainPage(tk.Frame):
+
+    # This is all content on the main page
+
+    def __init__(self, parent, controller):
+
+        # Call the parents constructor
+        tk.Frame.__init__(self, parent)
+
+        self.parent = parent
+        self.controller = controller
+
+        # Add the content
+
+        # Fill the whole window with a text box to be typed into
+        self.text_area = ScrolledText(self)
+        self.text_area.pack(side="top", fill="both", expand=True)

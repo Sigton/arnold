@@ -42,6 +42,7 @@ class ArnoldApp(tk.Tk):
         # A simple function to switch pages
 
         frame = self.frames[cont]
+        frame.set_menu_bar()
         frame.tkraise()
 
 
@@ -63,6 +64,10 @@ class MainPage(tk.Frame):
         self.text_area = ScrolledText(self)
         self.text_area.config(background="#444", foreground="white")
         self.text_area.pack(side="top", fill="both", expand=True)
+
+        # Create the menu bar and add it to the parent window
+        self.menu_bar = tk.Menu(self.controller)
+        self.set_menu_bar = lambda: self.controller.config(menu=self.menu_bar)
 
 app = ArnoldApp()
 app.mainloop()

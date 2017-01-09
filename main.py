@@ -29,6 +29,16 @@ class ArnoldApp(tk.Tk):
         # Create a dictionary of frames and add all pages to it
         self.frames = {}
 
+        for f in list(MainPage):
+
+            frame = f(self.container, self)
+            self.frames[f] = frame
+
+            frame.grid(row=0, column=0, sticky="nsew")
+
+        # set the starting page
+        self.show_frame(MainPage)
+
     def show_frame(self, cont):
 
         # A simple function to switch pages

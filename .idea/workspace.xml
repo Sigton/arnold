@@ -21,8 +21,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+            <state relative-caret-position="629">
+              <caret line="37" column="27" lean-forward="false" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -250,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1483980218804</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added content container">
+      <created>1483980434787</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1483980434787</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -282,7 +289,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Imports all required parts of tkinter" />
     <MESSAGE value="Create the backend class&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create the backend class&#10;" />
+    <MESSAGE value="Added content container" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added content container" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -291,8 +299,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+        <state relative-caret-position="629">
+          <caret line="37" column="27" lean-forward="false" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>

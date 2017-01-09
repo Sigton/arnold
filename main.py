@@ -26,4 +26,13 @@ class ArnoldApp(tk.Tk):
         self.container.grid_rowconfigure(0, weight=1)
         self.container.grid_columnconfigure(0, weight=1)
 
-        
+        # Create a dictionary of frames and add all pages to it
+        self.frames = {}
+
+    def show_frame(self, cont):
+
+        # A simple function to switch pages
+
+        frame = self.frames[cont]
+        frame.tkraise()
+        frame.set_menubar()

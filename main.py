@@ -16,4 +16,14 @@ class ArnoldApp(tk.Tk):
         tk.Tk.wm_title(self, "Arnold")
 
         # Set the window size
-        self.geometry('{}x{}'.format(800,600))
+        self.geometry('{}x{}'.format(800, 600))
+
+        # Create the container
+        self.container = tk.Frame(self)
+        self.container.pack(side="top", fill="both", expand=True)
+
+        # And configure the grid
+        self.container.grid_rowconfigure(0, weight=1)
+        self.container.grid_columnconfigure(0, weight=1)
+
+        

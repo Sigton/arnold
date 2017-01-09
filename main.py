@@ -29,12 +29,10 @@ class ArnoldApp(tk.Tk):
         # Create a dictionary of frames and add all pages to it
         self.frames = {}
 
-        for f in list(MainPage):
+        frame = MainPage(self.container, self)
+        self.frames[MainPage] = frame
 
-            frame = f(self.container, self)
-            self.frames[f] = frame
-
-            frame.grid(row=0, column=0, sticky="nsew")
+        frame.grid(row=0, column=0, sticky="nsew")
 
         # set the starting page
         self.show_frame(MainPage)
@@ -45,7 +43,6 @@ class ArnoldApp(tk.Tk):
 
         frame = self.frames[cont]
         frame.tkraise()
-        frame.set_menubar()
 
 
 class MainPage(tk.Frame):
@@ -65,3 +62,6 @@ class MainPage(tk.Frame):
         # Fill the whole window with a text box to be typed into
         self.text_area = ScrolledText(self)
         self.text_area.pack(side="top", fill="both", expand=True)
+
+app = ArnoldApp()
+app.mainloop()

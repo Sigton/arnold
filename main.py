@@ -61,6 +61,7 @@ class MainPage(tk.Frame):
 
         # Fill the whole window with a text box to be typed into
         self.text_area = ScrolledText(self)
+        self.text_area.config(background="#444", foreground="white")
         self.text_area.pack(side="top", fill="both", expand=True)
 
 app = ArnoldApp()

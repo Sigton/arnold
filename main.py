@@ -87,7 +87,7 @@ class MainPage(tk.Frame):
         self.file_menu.add_command(label="Open", command=None)
         self.file_menu.add_command(label="Save", command=None)
         self.file_menu.add_command(label="Save As", command=None)
-        self.file_menu.add_command(label="Quit", command=None)
+        self.file_menu.add_command(label="Quit", command=self.controller.quit)
 
         # Add the menus to the menu bar
         self.menu_bar.add_cascade(label="File", menu=self.file_menu)

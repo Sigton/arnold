@@ -7,7 +7,7 @@ class ArnoldApp(tk.Tk):
 
     # This is the main backend class
 
-    def __init__(self):
+    def __init__(self, content):
 
         # Call the parents constructor
         tk.Tk.__init__(self)
@@ -17,6 +17,9 @@ class ArnoldApp(tk.Tk):
 
         # Set the window size
         self.geometry('{}x{}'.format(800, 600))
+
+        # Set the starting content
+        self.content = content
 
         # Create the container
         self.container = tk.Frame(self)
@@ -44,6 +47,12 @@ class ArnoldApp(tk.Tk):
         frame = self.frames[cont]
         frame.set_menu_bar()
         frame.tkraise()
+
+    def create_new(self, content=""):
+
+        # Creates another instance of this class to have multiple files at once
+        new_app = ArnoldApp(content)
+        new_app.mainloop()
 
 
 class MainPage(tk.Frame):

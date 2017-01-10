@@ -69,5 +69,18 @@ class MainPage(tk.Frame):
         self.menu_bar = tk.Menu(self.controller)
         self.set_menu_bar = lambda: self.controller.config(menu=self.menu_bar)
 
+        # Create a file menu
+        self.file_menu = tk.Menu(self.menu_bar)
+        self.file_menu.config(background="#666", foreground="white")
+
+        self.file_menu.add_command(label="New", command=None)
+        self.file_menu.add_command(label="Open", command=None)
+        self.file_menu.add_command(label="Save", command=None)
+        self.file_menu.add_command(label="Save As", command=None)
+        self.file_menu.add_command(label="Quit", command=None)
+
+        # Add the menus to the menu bar
+        self.menu_bar.add_cascade(label="File", menu=self.file_menu)
+
 app = ArnoldApp()
 app.mainloop()
